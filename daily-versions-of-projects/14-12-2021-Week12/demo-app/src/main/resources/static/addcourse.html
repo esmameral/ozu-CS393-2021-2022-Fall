@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Ozyegin University</title>
+<script type="text/javascript" src="scripts/functions.js"></script>
+</head>
+
+<body>
+
+	<h2>Add New Course</h2>
+	<form action="success.html" method="get" onsubmit="return validateForm();">
+	<table id="mytable">
+		<tr>
+			<td><label for="code">Course Code</label></td>
+			<td><input type="text" id="code"  required size="5" maxlength="5" minlength="4"></td>
+		</tr>
+		<tr>
+			<td><label for="name">Course Name</label></td>
+			<td><input type="text" id="name" required size="20" maxlength="50" minlength="10"></td>
+		</tr>
+		<tr>
+			<td><label for="credit">Credit</label></td>
+			<td><input type="number" id="credit" max="8.0" min="1.0" step="0.5" required></td>
+		</tr>
+
+		<tr>
+			<td><label for="type">Course Type</label></td>
+			<td><select name="type" id="type" >
+					<option value="0">*Please Select*</option>
+					<option value="1">Face-to-Face Only</option>
+					<option value="2">Face-to-Face Asynchronous</option>
+					<option value="3">Face-to-Face Recorded</option>
+					<option value="4">Face-to-Face Synchronous Recorded</option>
+					<option value="5">Face-to-Face Synchronous</option>
+					<option value="6">Online Synchronous Recorded</option>
+					<option value="7">Online Synchronous</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td><label for="description">Description</label></td>
+			<td><textarea rows="5" cols="40" id="description" ></textarea></td>
+		</tr>
+		<tr>
+		<td colspan="2">
+			<input type="submit" name="Save">
+			
+		</td>
+		</tr>
+	</table>
+</form>
+
+</body>
+
+</html>
